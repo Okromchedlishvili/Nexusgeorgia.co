@@ -23,17 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
             if (targetContentPanel) {
                 modalOverlay.classList.add("active");
                 targetContentPanel.classList.add("active");
+                document.body.style.overflow = 'hidden';
                 document.body.classList.add('modal-open');
-                elementsToBlur.forEach(el => el.classList.add("blur"));
             }
         });
     });
 
     function closeModal() {
         modalOverlay.classList.remove("active");
-        allModalContents.forEach(panel => panel.classList.remove("active"));   
+        allModalContents.forEach(panel => panel.classList.remove("active"));  
+        document.body.style.overflow = ''; 
         document.body.classList.remove('modal-open');
-        elementsToBlur.forEach(el => el.classList.remove("blur"));
     }
 
     allCloseBtns.forEach(btn => {

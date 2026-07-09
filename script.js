@@ -68,6 +68,7 @@ solutionCards.forEach(card => {
 function closeModal() {
     modalOverlay.classList.remove('active');
     allModalContents.forEach(modal => modal.classList.remove('active'));
+    document.body.style.overflow = '';
     document.body.classList.remove('modal-open');
 }
 
