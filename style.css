@@ -1291,3 +1291,108 @@ body {
         position: static;
     }
 }
+
+@media (max-height: 500px) and (orientation: landscape) {
+    section[id] {
+        scroll-margin-top: 120px;
+    }
+
+    .navbar {
+        padding: 10px 5%;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .nav-menu {
+        gap: 20px; 
+        padding: 60px 0 20px 0;
+        overflow-y: auto;
+    }
+
+    .hero-section {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 30px 20px;
+        background-color: rgba(30, 45, 59, 0.9);
+    }
+
+    .hero-content .divider-home {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .solutions-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .delivery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .international-delivery {
+        height: auto;
+        padding: 10px 0 30px 0;
+    }
+
+    .contact-section {
+        padding: 40px 20px 60px 20px;
+    }
+
+    .contact-form {
+        gap: 15px;
+    }
+
+    .form-textarea {
+        height: 100px;
+    }
+
+    .modal-content-solutions, 
+    .modal-content-delivery,
+    #note-modal .modal-content {
+        max-height: 92vh !important;
+        width: 95% !important;
+        padding: 20px !important;
+        transform: none !important;
+        position: fixed !important;
+        overflow-y: auto !important;
+    }
+
+    .team-member-card {
+        flex-direction: row;
+        text-align: left;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .member-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .modal-matrix {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .field-container {
+        margin: 30px auto;
+    }
+
+    .note-card {
+        flex-direction: row;
+    }
+
+    .field-image {
+        width: 30%;
+    }
+}
