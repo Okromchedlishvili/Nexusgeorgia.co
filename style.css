@@ -1294,11 +1294,12 @@ body {
 
 @media (max-height: 500px) and (orientation: landscape) {
     section[id] {
-        scroll-margin-top: 120px;
+        scroll-margin-top: 75px;
     }
 
     .navbar {
         padding: 10px 5%;
+        max-height: 20vh;
     }
 
     .logo-img {
@@ -1307,7 +1308,7 @@ body {
 
     .nav-menu {
         gap: 20px; 
-        padding: 60px 0 20px 0;
+        padding: 20px 0 20px 0;
         overflow-y: auto;
     }
 
@@ -1333,15 +1334,29 @@ body {
         gap: 15px;
     }
 
+    .solution-card {
+        white-space: nowrap;
+        font-size: auto;
+        justify-content: center;
+    }
+
     .delivery-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+
+    .delivery-card {
+        white-space: nowrap;
+        font-size: auto;
     }
 
     .international-delivery {
         height: auto;
         padding: 10px 0 30px 0;
+    }
+
+    #accolades {
+        min-height: 100px;
+        height: auto;
     }
 
     .contact-section {
@@ -1359,7 +1374,7 @@ body {
     .modal-content-solutions, 
     .modal-content-delivery,
     #note-modal .modal-content {
-        max-height: 92vh !important;
+        max-height: 85vh !important;
         width: 95% !important;
         padding: 20px !important;
         transform: none !important;
