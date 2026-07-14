@@ -836,6 +836,11 @@ body {
     color: var(--accent);
 }
 
+.field-notes {
+    background-color: var(--bg-accent);
+    padding: 20px 0;
+}
+
 .field-intro {
     text-align: center;
 }
