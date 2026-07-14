@@ -1,5 +1,6 @@
 :root {
     --bg-main: rgb(30 45 59);
+    --bg-accent: #283F54;
     --bg-light: rgb(255, 255, 255);
     --text-main: #ffffff;
     --accent: #BFA30B;
@@ -45,7 +46,18 @@ body {
 
 .logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 10px;
+}
+
+.logo-btn a {
+    text-decoration: none;
+}
+
+.logo-title {
+    color: var(--accent);
+    text-shadow: 2px 2px 8px black;
 }
 
 .logo-img {
@@ -64,14 +76,14 @@ body {
     text-decoration: none;
     color: var(--text-main);
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 500;
     transition: color 0.2s ease;
     text-transform: uppercase;
 }
 
 .nav-menu a.active {
     color: var(--accent);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .nav-menu a:hover {
@@ -235,7 +247,7 @@ body {
     margin: 0 auto;
     padding: 40px 320px;
     text-align: left;
-    background-color: #283F54;
+    background-color: var(--bg-accent);
 }
 
 .delivery-head {
@@ -386,7 +398,7 @@ body {
 .accolade {
     font-size: 16pt;
     font-weight: 800;
-    color: #283F54;
+    color: var(--bg-accent);
     width: 200px;
     text-align: center;
 }
@@ -411,10 +423,11 @@ body {
 }
 
 .contact-intro {
-    background-color: var(--bg-main);
+    background-color: var(--bg-accent);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;    
 }
 
 .contact-content {
@@ -454,12 +467,17 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+    align-items: center;
 }
 
 .name-email {
     display: flex;
     gap: 20px;
+    width: 100%;
+}
+
+.message-text {
     width: 100%;
 }
 
@@ -472,6 +490,7 @@ body {
     font-size: 1.1rem;
     color: #3f5164;
     font-family: inherit;
+    border-radius: 10px;
 }
 
 .form-input::placeholder, .form-textarea::placeholder {
@@ -493,6 +512,7 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
+    border-radius: 10px;
 }
 
 .btn-submit:hover {
@@ -823,7 +843,7 @@ body {
 .field-head {
     font-size: 32pt;
     font-weight: 600;
-    color: var(--accent2);
+    color: var(--text-main);
 }
 
 .divider-field {
@@ -963,7 +983,13 @@ body {
     color: var(--text-main);
     display: block;
     padding-right: 20px;
-    margin-bottom: 25px;
+}
+
+#note-modal .divider-note {
+    background-color: var(--accent2);
+    width: 200px;
+    height: 5px;
+    margin: 15px 0 20px 0;
 }
 
 #note-modal .modal-note-text {
@@ -973,7 +999,7 @@ body {
 }
 
 #note-modal .modal-note-text p {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #note-modal .crypto-list {
