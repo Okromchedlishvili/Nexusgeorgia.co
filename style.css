@@ -1143,6 +1143,15 @@ body {
         overflow-y: hidden;
     }
 
+    .logo-img {
+        height: 60px;
+        padding-left: 10px;
+    }
+
+    .logo-title {
+        font-size: 1.8rem;
+    }
+
     .hero-section {
         justify-content: center;
     }
@@ -1334,7 +1343,11 @@ body {
     }
 
     .logo-img {
-        height: 50px;
+        height: 60px;
+    }
+
+    .logo-title {
+        font-size: 1.6rem;
     }
 
     .nav-menu {
