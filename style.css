@@ -1355,16 +1355,21 @@ body {
         width: 100%;
     }
 
-    #modal-domains-tooling {
-        text-align: left;
+    .modal-matrix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
-    #modal-domains-tooling .divider-lightbox {
-        margin-left: 0;
+    .modal-column {
+        width: 90%;
+        height: auto;
+        padding: 10px;
     }
 
     .modal-list {
-        padding-left: 25px;
+        margin-left: -10px;
     }
 
     .modal-list li {
