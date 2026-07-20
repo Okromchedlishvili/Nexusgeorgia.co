@@ -1,10 +1,9 @@
 :root {
-    --bg-main: rgb(30 45 59);
+    --bg-main: #1e2d3b;
     --bg-accent: #283F54;
-    --bg-light: rgb(225, 225, 225);
+    --bg-light: #e1e1e1;
     --text-main: #ffffff;
     --accent: #BFA30B;
-    --accent2: rgb(217, 189, 39);
 }
 
 * {
@@ -127,14 +126,14 @@ body {
 .hero-content .hero-title {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--accent2);
+    color: var(--accent);
     margin-bottom: 5px;
 }
 
 .hero-content .hero-subtitle {
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--accent2);
+    color: var(--accent);
 }
 
 .hero-content .divider-home {
@@ -148,7 +147,7 @@ body {
 .hero-content .hero-tagline {
     font-size: 1.4rem;
     line-height: 1.2;
-    color: var(--accent2);
+    color: var(--accent);
 }
 
 .solutions-section {
@@ -166,7 +165,7 @@ body {
 .divider-solutions {
     width: 200px;
     height: 10px;
-    background-color: var(--accent2);
+    background-color: var(--accent);
     margin-bottom: 40px;
 }
 
@@ -238,7 +237,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
-    color: var(--accent2);
+    color: var(--accent);
     margin-top: 40px;
     margin-bottom: 60px;
 }
@@ -259,7 +258,7 @@ body {
 .divider-delivery {
     width: 200px;
     height: 10px;
-    background-color: var(--accent2);
+    background-color: var(--accent);
     margin-bottom: 40px
 }
 
@@ -299,7 +298,7 @@ body {
 }
 
 .delivery-card:hover {
-    color: var(--accent2);
+    color: var(--accent);
 }
 
 .delivery-row {
@@ -319,7 +318,7 @@ body {
 
 .clients-head {
     font-size: 15pt;
-    color: var(--accent2);
+    color: var(--accent);
 }
 
 .clients-subhead {
@@ -331,22 +330,74 @@ body {
     font-size: 13pt;
 }
 
+.quotes {
+    margin: -20px 0 5px -10px;
+    border-bottom: 2px solid var(--accent);
+}
+
+.client-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.circle {    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.client-1 {
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: var(--bg-main);
+    max-width: 50%;
+}
+
+.first-quote {
+    margin-left: -10px;
+    border-bottom: 2px solid var(--accent);
+}
+
 .quote-1 {
     font-style: italic;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .author-1 {
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-left: -10px;
+    white-space: nowrap;
+}
+
+.client-2 {
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: var(--bg-main);
+    max-width: 50%;
 }
 
 .quote-2 {
     font-style: italic;
-    margin-top: 35px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--accent);
 }
 
 .author-2 {
-    margin-top: 15px;
+    margin-top: 30px;
+    white-space: nowrap;
 }
 
 .international-delivery {
@@ -375,7 +426,7 @@ body {
 .divider-international {
     width: 200px;
     height: 10px;
-    background-color: var(--accent2);
+    background-color: var(--accent);
     margin-bottom: 20px
 }
 
@@ -445,7 +496,7 @@ body {
 .divider-contact {
     width: 180px;
     height: 10px;
-    background-color: var(--accent2);
+    background-color: var(--accent);
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -505,7 +556,7 @@ body {
 
 .btn-submit {
     background-color: var(--bg-accent);
-    color: var(--accent2);
+    color: var(--accent);
     font-size: 1.2rem;
     font-weight: 600;
     padding: 14px 60px;
@@ -561,7 +612,7 @@ body {
 }
 
 .footer-social a:hover {
-    color: var(--accent2);
+    color: var(--accent);
 }
 
 .modal-overlay {
@@ -635,7 +686,7 @@ body {
 }
 
 .divider-lightbox {
-    background-color: var(--accent2);
+    background-color: var(--accent);
     width: 100px;
     height: 5px;
     margin-bottom: 20px;
@@ -706,7 +757,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--accent2);
+    border: 2px solid var(--accent);
 }
 
 .member-info {
@@ -738,7 +789,7 @@ body {
 
 .member-title {
     font-size: 1.1rem;
-    color: var(--accent2);
+    color: var(--accent);
     font-weight: 500;
     margin-bottom: 8px;
 }
@@ -757,7 +808,7 @@ body {
 }
 
 .divider-list {
-    background-color: var(--accent2);
+    background-color: var(--accent);
     width: 60px;
     height: 4px;
     margin: 20px 0;
@@ -771,7 +822,7 @@ body {
 }
 
 .modal-outro {
-    color: var(--accent2);
+    color: var(--accent);
     font-weight: 500;
     margin-top: 20px;
 }
@@ -821,7 +872,7 @@ body {
 .modal-category {
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--accent2);
+    color: var(--accent);
     max-width: 200px;
 }
 
@@ -871,7 +922,7 @@ body {
 }
 
 .modal-column:hover {
-    border-color: var(--accent2);
+    border-color: var(--accent);
 }
 
 .modal-column:hover .modal-front {
@@ -915,7 +966,7 @@ body {
 }
 
 .divider-field {
-    background-color: var(--accent2);
+    background-color: var(--accent);
     width: 200px;
     height: 5px;
     margin: 20px auto;
@@ -948,7 +999,7 @@ body {
 }
 
 .note-card:hover {
-    border-color: var(--accent2);
+    border-color: var(--accent);
 }
 
 .field-image {
@@ -1142,7 +1193,7 @@ body {
 }
 
 .scroll-to-top:hover {
-    background-color: var(--accent2);
+    background-color: var(--accent);
     transform: translateY(-3px);     
 }
 
@@ -1227,7 +1278,7 @@ body {
         right: -100%;
         width: 70%;
         height: 100vh;
-        background-color: var(--bg-main);
+        background-color: var(--accent);
         flex-direction: column;
         justify-content: center;
         gap: 40px;
@@ -1240,6 +1291,11 @@ body {
         right: 0;
         visibility: visible;
         overflow-y: hidden;
+    }
+
+    .nav-menu a.active {
+        color: var(--bg-main);
+        font-weight: 600;
     }
 
     .logo-img {
@@ -1259,7 +1315,7 @@ body {
         width: 100%;
         min-width: unset;
         padding: 40px 20px;
-        background-color: rgba(30, 45, 59, 0.85);
+        background-color: rgba(30, 45, 59, 0.45);
     }
 
     .solutions-section, .delivery-section {
@@ -1298,6 +1354,28 @@ body {
     .delivery-card {
         width: 100%;
         text-align: center;
+    }
+
+    .client-row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .client-1 {
+        max-width: 100%;
+    }
+
+    .author-1 {
+        white-space: wrap;
+    }
+
+    .client-2 {
+        max-width: 100%;
+    }
+
+    .author-2 {
+        white-space: wrap;
     }
 
     .international-delivery {
@@ -1472,7 +1550,7 @@ body {
     .hero-content {
         width: 100%;
         padding: 30px 20px;
-        background-color: rgba(30, 45, 59, 0.9);
+        background-color: rgba(30, 45, 59, 0.45);
     }
 
     .hero-content .divider-home {
