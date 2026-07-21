@@ -409,6 +409,10 @@ body {
     white-space: nowrap;
 }
 
+.highlight {
+    color: var(--accent);
+}
+
 .international-delivery {
     height: 40vh;
     width: 100vw;
