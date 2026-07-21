@@ -1618,6 +1618,14 @@ body {
         padding: 20px;
     }
 
+    .author-1 {
+        white-space: wrap;
+    }
+
+    .author-2 {
+        white-space: wrap;
+    }
+
     .international-delivery {
         height: auto;
     }
