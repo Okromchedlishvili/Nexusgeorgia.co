@@ -692,6 +692,7 @@ body {
 
 .modal-intro {
     color: var(--text-main);
+    font-size: 16pt;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -835,9 +836,10 @@ body {
 
 .divider-list {
     background-color: var(--accent);
-    width: 60px;
+    width: 80px;
     height: 4px;
     margin: 20px 0;
+    margin-left: 5px;
 }
 
 .modal-step {
