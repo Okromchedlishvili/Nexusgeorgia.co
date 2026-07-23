@@ -405,13 +405,15 @@ body {
 .quote-2 {
     font-style: italic;
     margin-bottom: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 2px solid var(--accent);
+    margin-left: -10px;
 }
 
 .author-2 {
     margin-top: 30px;
     white-space: nowrap;
+    margin-left: -10px;
 }
 
 .highlight {
@@ -1429,11 +1431,15 @@ body {
 
     .international-content {
         width: 100%;
-        text-align: center;
     }
 
     .international-card {
         padding: 20px;
+    }
+
+    .divider-international {
+        margin-left: 0;
+        margin-bottom: 15px;
     }
 
     #accolades {
@@ -1638,6 +1644,10 @@ body {
 
     .international-delivery {
         height: auto;
+    }
+
+    .divider-international {
+        margin-bottom: 15px;
     }
 
     #accolades {
