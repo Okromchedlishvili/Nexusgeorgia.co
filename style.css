@@ -1522,8 +1522,8 @@ body {
         margin-top: -40px;
     }
 
-    #note-modal .modal-content {
-        padding: 40px 40px 40px 20px;
+    .field-article-container {
+        padding: 60px 20px;
     }
 
     .footer-social {
@@ -1663,6 +1663,10 @@ body {
 
     .field-container {
         margin: 30px auto;
+    }
+
+    .field-article-container {
+        padding: 60px 60px;
     }
 
     .note-card {

@@ -27,12 +27,16 @@ scrollToTopBtn.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const shareContainers = document.querySelectorAll(".share-container");
+    
     shareContainers.forEach(container => {
-        const modal = container.closest(".modal-content");
-        if (!modal) return;
-        const titleElement = document.querySelector(".field-article-head") || document.querySelector("h1");
-        const noteTitle = encodeURIComponent(titleElement?.innerText || "Nexus Georgia Field Note");
+        const articleContent = container.closest(".field-article-content");
+        const titleElement = articleContent 
+            ? articleContent.querySelector(".field-article-head") 
+            : (document.querySelector("h1") || document.querySelector(".field-article-head"));
+            
+        const noteTitle = encodeURIComponent(titleElement?.innerText.trim() || "Nexus Georgia Field Note");
         const currentUrl = encodeURIComponent(window.location.href);
+
         const linkedinBtn = container.querySelector(".share-btn.linkedin");
         const twitterBtn = container.querySelector(".share-btn.twitter");
         const facebookBtn = container.querySelector(".share-btn.facebook");
