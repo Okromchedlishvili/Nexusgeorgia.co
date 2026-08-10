@@ -8,43 +8,6 @@ if (menuToggle && navMenu) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const noteCards = document.querySelectorAll(".note-card");
-    const modalOverlay = document.getElementById("note-modal");
-    const allCloseBtns = document.querySelectorAll(".close-modal");
-    const allModalContents = document.querySelectorAll("#note-modal .modal-content");
-    const elementsToBlur = document.querySelectorAll("header, main, footer");
-
-    noteCards.forEach(card => {
-        card.addEventListener("click", () => {
-            const targetId = card.getAttribute("data-target");
-            const targetContentPanel = document.getElementById(targetId);
-
-            if (targetContentPanel) {
-                modalOverlay.classList.add("active");
-                targetContentPanel.classList.add("active");
-                document.body.style.overflow = 'hidden';
-                document.body.classList.add('modal-open');
-            }
-        });
-    });
-
-    function closeModal() {
-        modalOverlay.classList.remove("active");
-        allModalContents.forEach(panel => panel.classList.remove("active"));  
-        document.body.style.overflow = ''; 
-        document.body.classList.remove('modal-open');
-    }
-
-    allCloseBtns.forEach(btn => {
-        btn.addEventListener("click", closeModal);
-    });
-
-    window.addEventListener("click", (e) => {
-        if (e.target === modalOverlay) closeModal();
-    });
-});
-
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 window.addEventListener('scroll', () => {
@@ -67,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     shareContainers.forEach(container => {
         const modal = container.closest(".modal-content");
         if (!modal) return;
-        const noteTitle = encodeURIComponent(modal.querySelector(".modal-note-head")?.innerText || "Nexus Georgia Field Note");
+        const titleElement = document.querySelector(".field-article-head") || document.querySelector("h1");
+        const noteTitle = encodeURIComponent(titleElement?.innerText || "Nexus Georgia Field Note");
         const currentUrl = encodeURIComponent(window.location.href);
         const linkedinBtn = container.querySelector(".share-btn.linkedin");
         const twitterBtn = container.querySelector(".share-btn.twitter");
