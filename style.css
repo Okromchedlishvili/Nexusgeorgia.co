@@ -13,7 +13,7 @@
 }
 
 section[id] {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 20vh;
 }
 
 html {
@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 2% 5%;
     background-color: rgb(30 45 59);
     backdrop-filter: blur(10px);
     position: sticky;
@@ -101,7 +101,8 @@ body {
 }
 
 .hero-section {
-    min-height: 85vh;
+    height: 85vh;
+    max-height: 1000px;
     background-image: url('Assets/Office\ Ninutsa.jpg'); 
     background-size: cover;
     background-position: center;
@@ -157,7 +158,10 @@ body {
 
 .solutions-section {
     margin: 0 auto;
-    padding: 40px 320px;
+    padding: 40px 0;
+    max-width: 1200px;
+    padding-left: clamp(160px, 5vw, 500px);
+    padding-right: clamp(160px, 5vw, 500px);
     text-align: center;
 }
 
@@ -248,10 +252,16 @@ body {
 }
 
 .delivery-section{
-    margin: 0 auto;
-    padding: 40px 320px;
-    text-align: left;
     background-color: var(--bg-accent);
+}
+
+.delivery-box {
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: left;
+    max-width: 1200px;
+    padding-left: clamp(160px, 5vw, 500px);
+    padding-right: clamp(160px, 5vw, 500px);
 }
 
 .delivery-head {
@@ -323,7 +333,11 @@ body {
 
 .client-section {
     background-color: var(--bg-main);
-    padding: 40px 320px;
+    padding: 40px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: clamp(160px, 5vw, 500px);
+    padding-right: clamp(160px, 5vw, 500px);
 }
 
 .clients-head {
@@ -421,7 +435,7 @@ body {
 }
 
 .international-delivery {
-    height: 55vh;
+    height: auto;
     width: 100vw;
     display: flex;
     margin: 0;
@@ -435,6 +449,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     flex-shrink: 0;
+}
+
+@media (min-width: 1600px) {
+    .international-image {
+        width: 65vw;
+    }
+}
+
+@media (min-width: 2560px) {
+    .international-image {
+        width: 70vw;
+    }
 }
 
 .international-content {
@@ -1046,7 +1072,7 @@ body {
 .note-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
@@ -1074,18 +1100,27 @@ body {
 }
 
 .field-article-container {
-    padding: 60px 320px;
     background-color: var(--bg-light);
+}
+
+.field-article-content {
+    padding: 60px 0;
+    max-width: 1200px;
+    padding-left: clamp(160px, 5vw, 500px);
+    padding-right: clamp(160px, 5vw, 500px);
+    margin: 0 auto;
 }
 
 .field-article-head {
     color: var(--bg-main);
     font-size: 20pt;
     font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .innote-image {
-    width: 50%;
+    width: 40%;
     height: auto;
     border-radius: 8px;
     float: left;
@@ -1270,6 +1305,7 @@ body {
 
     .navbar {
         padding-left: 0;
+        min-height: 120px;
     }
 
     .nav-menu {
@@ -1318,7 +1354,7 @@ body {
         background-color: rgba(30, 45, 59, 0.45);
     }
 
-    .solutions-section, .delivery-section {
+    .solutions-section, .delivery-box {
         padding: 40px 20px;
     }
 
@@ -1522,7 +1558,7 @@ body {
         margin-top: -40px;
     }
 
-    .field-article-container {
+    .field-article-content {
         padding: 60px 20px;
     }
 
